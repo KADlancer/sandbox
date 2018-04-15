@@ -2,11 +2,15 @@
 ######################
 node_modules/
 node_modules
+src/dist/
+src/include/basics/dist/
 .vagrant/
 
 # ignored files      #
 ######################
 yarn.lock
+src/include/basics/css.includes.php
+src/include/basics/js.includes.php
 
 # OS generated files #
 ######################

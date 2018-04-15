@@ -91,7 +91,7 @@ module.exports = function(grunt) {
 		assetAppend: {
       jsMain: {
           paths: jsFilesMainFullPath,
-          output: "src/include/basics/js.includes.main.php"
+          output: "src/include/basics/js.includes.php"
       },
 			css: {
 				paths: cssIncludes,
