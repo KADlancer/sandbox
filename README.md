@@ -2,7 +2,7 @@
 
 Getting Started
 ---
-Template-Vorlage für das Aufsetzen eines Projekts
+Template-Base Sandbox to bootstrap new ideas
 
 ### Vagrant
 To use the vagrant setup, you need to install Vagrant from hashicorp and Oracle VM VirtualBox 
