@@ -1,0 +1,7 @@
+<?php $title = "Sandbox Index"; ?>
+<?php $templateType = "demoPage"; ?>
+<?php include('src/include/basics/dist/htmlHeader.php'); ?>
+
+	<h1>Hello World!</h1>
+
+<?php include('src/include/basics/dist/htmlFooter.php'); ?>
