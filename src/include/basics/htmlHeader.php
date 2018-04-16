@@ -1,4 +1,4 @@
-<?php include('../../include/basics/twig.php'); ?><!DOCTYPE html>
+<?php require_once('src/include/basics/twig.php'); ?><!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -32,7 +32,7 @@
 	<link type="text/css" rel="stylesheet" href="../../dist_css/main.min.css">
 	<!--<!(endif)-->
 	<!--(if target dev)><!-->
-	<?php include 'src/include/basics/css.includes.php'; ?>
+	<?php include('src/include/basics/css.includes.php'); ?>
 	<!--<!(endif)-->
 
 </head>
