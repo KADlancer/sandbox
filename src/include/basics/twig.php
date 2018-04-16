@@ -10,7 +10,3 @@
 	));
 
 	$twig->addExtension(new Twig_Extension_Debug());
-
-
-	$glossary_data = json_decode(file_get_contents('src/patterns/03-organisms/demo-tabs/demo-tabs.json'), true);
-	$twig->addGlobal('glossary_data', $glossary_data);
