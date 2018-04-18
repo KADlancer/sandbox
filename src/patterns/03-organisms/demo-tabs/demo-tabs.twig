@@ -23,15 +23,15 @@
 
 			<div class="demo-tabs--panel{% if loop.first %}{{ firstClass }}{% endif %}"
 			     id="{{ moduleID ~ "_" ~ loop.index }}">
-				{% for item in tab["content"] %}
-
-					<div>
-						<a href="{{ item["href"] }}" title="{{ item["title"] }}">
-							{{ item["label"] }}
-						</a>
-					</div>
-
-				{% endfor %}
+				<ul class="linklist">
+					{% for item in tab["content"] %}
+						<li>
+							<a href="{{ item["href"] }}" title="{{ item["title"] }}">
+								<span class="label">{{ item["label"] }}</span>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
 			</div>
 
 		{% endfor %}

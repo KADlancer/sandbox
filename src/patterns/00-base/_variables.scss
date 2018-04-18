@@ -2,9 +2,16 @@
 /* Farben / Farbwelt
 -------------------------------------------------------------- */
 $white:           #ffffff; /* white */
+$greyLight:       #d6dddf; /* light grey */
+$greyDark:        #333333; /* dark grey */
 $black:           #000000; /* black */
-$basicFontColor:  #333333; /* black */
+$yellow:          #f39900; /* yellow */
+
 $primaryColor:    #ffe69b; /* orange */
+
+$fontColorBasic:  $greyDark;  /* blackish grey */
+$fontColorLight:  $greyLight; /* grey on white bg */
+$fontColorLinks:  $yellow;    /* active links */
 
 $bgPageStart:     #828c91;
 $bgPageEnd:       #646d74;
@@ -13,14 +20,6 @@ $borderModules:   #343b42;
 $bgMarginal:      #58626a;
 
 $bgWhiteGradient: #cdd7dc;
-
-$red: #cc0839; /* red */
-$blue: #009ef2; /* blue */
-$purple: #532a54; /* purple */
-$pink: #e2007a; /* pink */
-$yellow: #f39900; /* yellow */
-$orange: #e64715; /* orange */
-
 
 /* Durations
 -------------------------------------------------------------- */

@@ -25,7 +25,7 @@
 	<![endif]-->
 
 	<!--(if target prod)><!-->
-	<link type="text/css" rel="stylesheet" href="../../dist_css/main.min.css">
+	<link type="text/css" rel="stylesheet" href="src/dist/css/main.min.css">
 	<!--<!(endif)-->
 	<!--(if target dev)><!-->
 	<?php include('src/include/basics/css.includes.php'); ?>

@@ -20,8 +20,8 @@ module.exports = function(grunt) {
 
 	// Main JS Files
 	var jsFilesMain = [
-		'/vendor/frameworks/jquery/jquery-3.3.1.slim.min.js',
-		'/patterns/00-base/responsive.js',
+		//'/vendor/frameworks/jquery/jquery-3.3.1.slim.min.js',
+		'/vendor/frameworks/jquery/jquery-3.3.1.min.js',
 		'/patterns/03-organisms/demo-tabs/demo-tabs.js',
 
 	];

@@ -1,6 +1,6 @@
 /* gradient
 -------------------------------------------------------------- */
-@mixin gradient ($origin: left, $start: #ffffff, $stop: #000000) {
+@mixin gradient ($origin: to right, $start: #ffffff, $stop: #000000) {
 	background-color: $start;
 	background: -webkit-linear-gradient($origin, $start, $stop);
 	background: -moz-linear-gradient($origin, $start, $stop);
