@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 		var file = cssIncludes[i],
 			fileName = file.substr(0, file.lastIndexOf('.'));
 
-		cssIncludes[i] = dirDistSrc + fileName + '.css';
+		cssIncludes[i] = dirDistCss + fileName + '.css';
 	}
 
 
