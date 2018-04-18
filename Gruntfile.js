@@ -8,16 +8,19 @@ module.exports = function(grunt) {
 		dirSrcPatterns = dirSrc + '/patterns',
 		dirSrcVendor = dirSrc + '/vendor',
 
+		dirSrcCss = dirSrc + '/patterns/00-base/',
+
 		dirDistJs = dirDist + '/js',
 		dirDistCss = dirDist + '/css';
 
 	// sass & css files array
 	var cssFiles = [
-		'/patterns/00-base/main.scss',
+		'/main.scss',
 	];
 
 	// Main JS Files
 	var jsFilesMain = [
+		'/vendor/frameworks/jquery/jquery-3.3.1.slim.min.js',
 		'/patterns/00-base/responsive.js',
 
 	];
@@ -37,7 +40,7 @@ module.exports = function(grunt) {
 		}
 
 		var destination = dirDistCss + fileName + '.css',
-			source = dirSrc + fileName + sourceExtension;
+			source = dirSrcCss + fileName + sourceExtension;
 
 		newElement[destination] = source;
 		scssCompilePaths.push(newElement);
@@ -55,7 +58,7 @@ module.exports = function(grunt) {
 		var file = cssIncludes[i],
 			fileName = file.substr(0, file.lastIndexOf('.'));
 
-		cssIncludes[i] = dirSrc + fileName + '.css';
+		cssIncludes[i] = dirDistSrc + fileName + '.css';
 	}
 
 

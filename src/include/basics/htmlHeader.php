@@ -18,10 +18,6 @@
 
 	<title><?php echo $title ?></title>
 
-	<link rel="icon" type="image/vnd.microsoft.icon" href="../../img/layout/favicon.ico"/>
-	<link rel="icon" href="../../img/layout/favicon-32.ico" sizes="32x32" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="../../img/layout/favicon.ico" />
-
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
