@@ -1,0 +1,45 @@
+{% set salt = random(9999) %}
+{% set moduleID = "demoTabs_" ~ salt  %}
+{% if (not inactive) %}
+	{% set firstClass = " active" %}
+{% endif %}
+
+
+<div class="demo-tabs" id="{{ moduleID }}">
+
+	<div class="demo-tabs--header">
+		{% for tab in demo_tabs["tabs"] %}
+
+			<div class="demo-tabs--tab{% if loop.first %}{{ firstClass }}{% endif %}"
+			     data-tab-target="{{ moduleID ~ "_" ~ loop.index }}">
+				{{ tab["label"] }}
+			</div>
+
+		{% endfor %}
+	</div>
+
+	<div class="demo-tabs--body">
+		{% for tab in demo_tabs["tabs"] %}
+
+			<div class="demo-tabs--panel{% if loop.first %}{{ firstClass }}{% endif %}"
+			     id="{{ moduleID ~ "_" ~ loop.index }}">
+				{% for item in tab["content"] %}
+
+					<div>
+						<a href="{{ item["href"] }}" title="{{ item["title"] }}">
+							{{ item["label"] }}
+						</a>
+					</div>
+
+				{% endfor %}
+			</div>
+
+		{% endfor %}
+
+
+		<div class="demo-tabs--placeholder">
+			<strong>Select a tab</strong>
+		</div>
+	</div>
+
+</div>

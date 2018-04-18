@@ -1,0 +1,48 @@
+
+body {
+	min-height: 100vh;
+	min-width: 320px;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.page--main {
+	margin: 10px;
+}
+.page--marginal {
+	margin: 10px;
+}
+
+.article-intro {
+	margin: 10px;
+}
+
+@media (min-width: 768px) {
+	.page {
+		flex-direction: row;
+		flex: 1;
+	}
+	.page--main {
+		flex: 1;
+	}
+	.page--marginal {
+		/* 12em is the width of the columns */
+		flex: 0 0 12em;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page {
+	}
+	.page--main {
+	}
+	.page--marginal {
+		/* 12em is the width of the columns */
+		flex: 0 0 24em;
+	}
+}

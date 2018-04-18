@@ -1,0 +1,25 @@
+
+body {
+	color: $basicFontColor;
+	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.page {
+	background: $bgPageStart;
+}
+.page--main {
+	border: 2px solid $borderModules;
+	background: $white;
+}
+.page--marginal {
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,107 @@
+{
+	"tabs": [
+		{
+			"label": "Topics",
+			"title": "Tab with all current topics",
+			"type": "links",
+			"content": [
+				{
+					"label": "HTML Techniques",
+					"title": "HTML Techniques",
+					"href": "#html_techniques"
+				},
+				{
+					"label": "CSS Styling",
+					"title": "CSS Styling",
+					"href": "#css_styling"
+				},
+				{
+					"label": "Flash Tutorials",
+					"title": "Flash Tutorials",
+					"href": "#flash_tutorials"
+				},
+				{
+					"label": "Web Miscellanea",
+					"title": "Web Miscellanea",
+					"href": "#web_miscellanea"
+				},
+				{
+					"label": "Site News",
+					"title": "Site News",
+					"href": "#site_news"
+				},
+				{
+					"label": "Web Development",
+					"title": "Web Development",
+					"href": "#web_development"
+				}
+			]
+		},
+		{
+			"label": "Archives",
+			"title": "Tab with all archives",
+			"type": "links",
+			"content": [
+				{
+					"label": "2017",
+					"title": "archived posts from 2017",
+					"href": "#archive_2017"
+				},
+				{
+					"label": "2016",
+					"title": "archived posts from 2016",
+					"href": "#archive_2016"
+				},
+				{
+					"label": "2015",
+					"title": "archived posts from 2015",
+					"href": "#archive_2015"
+				}
+			]
+		},
+		{
+			"label": "Pages",
+			"title": "Tab with a micro site map",
+			"type": "sitemap",
+			"content": [
+				{
+					"label": "Home",
+					"title": "Demo Homepage",
+					"href": "#home"
+				},
+				{
+					"label": "Inspiration",
+					"title": "browse our extensive inspirational database for new ideas and old code",
+					"href": "#inspiration"
+				},
+				{
+					"label": "Challenges",
+					"title": "Previous Code Challenges",
+					"href": "#challenges",
+					"sub": [
+						{
+							"label": "Tough Mudder Coding Challenge",
+							"title": "Tough Mudder Coding Challenge",
+							"href": "#toughmuddercoding_2016"
+						},
+						{
+							"label": "CodeAid 2015",
+							"title": "Code for a better world",
+							"href": "#codeaid_2015"
+						},
+						{
+							"label": "Hack'a'Thon",
+							"title": "Hacks and Talks ffa",
+							"href": "#hackathon"
+						}
+					]
+				},
+				{
+					"label": "contact",
+					"title": "Demo Contact Page",
+					"href": "#contact"
+				}
+			]
+		}
+	]
+}

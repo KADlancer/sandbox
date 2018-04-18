@@ -1,0 +1,80 @@
+.demo-tabs {
+	border: 2px solid $borderModules;
+	background: $bgMarginal;
+	padding: 20px 15px;
+	margin: 0 0 20px;
+	display: block;
+}
+
+.demo-tabs--header {
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.demo-tabs--tab {
+	border: 2px solid $borderModules;
+	border-width: 2px 2px 0;
+	padding: 10px 5px;
+
+	@media all and (min-width: 400px) {
+		padding: 10px 15px;
+	}
+
+	margin: 0 2px;
+	background: $borderModules;
+	color: $primaryColor;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&.active {
+		background: $white;
+		@include gradient(top, $bgWhiteGradient, $white);
+		box-shadow: inset 0 1px 0 0 #fff;
+		color: $basicFontColor;
+	}
+}
+
+
+
+
+.demo-tabs--body {
+	position: relative;
+	border: 2px solid black;
+	background: white;
+	margin-top: -2px;
+	padding: 15px 30px;
+	min-height: 50px;
+	overflow: hidden;
+	//box-shadow: inset 0 -1px 0 0 #fff; replaced by positioning of gradient pseudo element
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 1px;
+		left: 0;
+		right: 0;
+		@include gradient(bottom, $bgWhiteGradient, $white);
+		height: 23px;
+	}
+}
+
+.demo-tabs--placeholder {
+	position: absolute;
+	padding: 15px 0;
+
+}
+
+.demo-tabs--panel {
+	display: none;
+	position: relative;
+
+	&.active {
+		display: block;
+	}
+}
+

@@ -22,6 +22,7 @@ module.exports = function(grunt) {
 	var jsFilesMain = [
 		'/vendor/frameworks/jquery/jquery-3.3.1.slim.min.js',
 		'/patterns/00-base/responsive.js',
+		'/patterns/03-organisms/demo-tabs/demo-tabs.js',
 
 	];
 	// gather all scss files for dev and combine them with their destination paths
