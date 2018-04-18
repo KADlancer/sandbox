@@ -7,7 +7,6 @@
 
 		var tabModul = this;
 
-		//$.fn.demotabs.initTabs(demotabs_data, settings);
 		$.fn.demotabs.initTabs(tabModul, settings);
 
 		return this;
@@ -23,10 +22,6 @@
 	};
 
 	$.fn.demotabs.initTabs = function(tabModule, settings) {
-
-		console.log("tabModule", tabModule);
-		console.log("settings", settings);
-
 		tabModule.on(settings.trigger, '.demo-tabs--tab', function(e) {
 			var tab = $(e.target);
 			var module = tab.parents('.demo-tabs');
@@ -36,9 +31,6 @@
 		});
 
 		showTab = function(tab, module, ref) {
-			console.log("tab", tab);
-			console.log("module", module);
-			console.log("ref", ref);
 
 			module.find('.demo-tabs--tab').not(tab).removeClass('active');
 			tab.toggleClass('active');
@@ -48,16 +40,6 @@
 			module.find('#' + ref).toggle().toggleClass('active');
 			//module.find('#' + ref).show().addClass('active');
 		};
-
-
-
-		$(tabModule).find('.demo-tabs--tab').each(function() {
-			var _tab = this;
-			//var module = _tabModule[0].source;
-
-			//console.log(module);
-
-		});
 
 	};
 
