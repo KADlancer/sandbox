@@ -54,7 +54,10 @@
 	border: 2px solid black;
 	background: white;
 	margin-top: -2px;
-	padding: 15px 30px;
+	padding: 15px;
+	@media all and (min-width: 400px) {
+		padding: 15px 30px;
+	}
 	min-height: 50px;
 	overflow: hidden;
 	//box-shadow: inset 0 -1px 0 0 #fff; replaced by positioning of gradient pseudo element
@@ -116,6 +119,13 @@
 }
 
 .mediaList {
+	> li {
+		border-bottom: 1px solid $greyLight;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
 	.img {
 		width: 60px;
 		height: 90px;
