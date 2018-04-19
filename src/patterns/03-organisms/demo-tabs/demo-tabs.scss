@@ -85,16 +85,19 @@
 	}
 }
 
-
-
-.linklist {
+.unList {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
 	> li {
 		margin: 0;
 		padding: 0;
+	}
+}
+
+.linklist {
+
+	> li {
 		border-bottom: 1px solid $greyLight;
 
 		&:last-child {
@@ -105,16 +108,21 @@
 	a {
 		padding: 20px 0;
 		display: block;
-		text-decoration: none;
-		color: $fontColorBasic;
 
 		&:hover {
-			color: $fontColorLinks;
-
 			.label {
 				text-decoration: underline;
 			}
 		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $fontColorBasic;
+
+	&:hover {
+		color: $fontColorLinks;
 	}
 }
 

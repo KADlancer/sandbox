@@ -73,7 +73,7 @@
 
 		addCounter = function (ref) {
 			if ( !ref.attr('data-counter') ) {
-				var links = ref.find('.linklist li');
+				var links = ref.find('.countable');
 				links.each( function () {
 					var _rand = getRandomArbitrary(1, 23);
 					var _label = (_rand > 1) ? "Posts" : "Post" ;

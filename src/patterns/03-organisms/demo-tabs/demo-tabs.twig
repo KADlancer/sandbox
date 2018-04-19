@@ -24,15 +24,64 @@
 
 			<div class="demo-tabs--panel{% if loop.index == activeIndex %}{{ activeClass }}{% endif %}"
 			     id="{{ moduleID ~ "_" ~ loop.index }}">
-				<ul class="linklist">
-					{% for item in tab["content"] %}
-						<li>
-							<a href="{{ item["href"] }}" title="{{ item["title"] }}">
-								<span class="label">{{ item["label"] }}</span>
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
+
+				{% if tab["type"] == "links" %}
+					<ul class="unList linklist">
+						{% for item in tab["content"] %}
+							<li class="countable">
+								<a href="{{ item["href"] }}" title="{{ item["title"] }}">
+									<span class="label">{{ item["label"] }}</span>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% elseif tab["type"] == "media" %}
+					<ul class="unList mediaList">
+						{% for item in tab["content"] %}
+							{% set rand = random(9) + 1 %}
+							<li>
+								<a href="{{ item["href"] }}"
+								   title="{{ item["title"] }}"
+								   class="media">
+									<div class="img">
+										<img src="http://lorempixel.com/60/90/business/{{ rand }}"/>
+									</div>
+									<div class="bd">
+										{{ item["label"] }}
+									</div>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% elseif tab["type"] == "sitemap" %}
+					<ul class="unList sitemap">
+						{% set depth = 0 %}
+
+						{% macro recursiveMenu(item, depth) %}
+						{% import _self as self %}
+							<li>
+								<a href="{{ item["href"] }}" title="{{ item["title"] }}">
+									<span class="label">{{ item["label"] }}</span>
+								</a>
+								{# render child elements #}
+								<ul class="">
+									{% for child in item["sub"] %}
+										{{ self.recursiveMenu(child, depth) }}
+									{% endfor %}
+								</ul>
+							</li>
+						{% endmacro %}
+
+						{% set depth = depth + 1 %}
+
+						{% from _self import recursiveMenu %}
+
+
+						{% for item in tab["content"] %}
+							{{ recursiveMenu(item, true) }}
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</div>
 
 		{% endfor %}

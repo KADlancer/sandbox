@@ -40,20 +40,20 @@
 		{
 			"label": "Archives",
 			"title": "Tab with all archives",
-			"type": "links",
+			"type": "media",
 			"content": [
 				{
-					"label": "2017",
+					"label": "2017 - automation took our workload away",
 					"title": "archived posts from 2017",
 					"href": "#archive_2017"
 				},
 				{
-					"label": "2016",
+					"label": "2016 - what a busy year, so much work to do and not enought staff to delegate tasks away",
 					"title": "archived posts from 2016",
 					"href": "#archive_2016"
 				},
 				{
-					"label": "2015",
+					"label": "2015 - a slow year, no new customers",
 					"title": "archived posts from 2015",
 					"href": "#archive_2015"
 				}
@@ -72,7 +72,36 @@
 				{
 					"label": "Inspiration",
 					"title": "browse our extensive inspirational database for new ideas and old code",
-					"href": "#inspiration"
+					"href": "#inspiration",
+					"sub": [
+						{
+							"label": "Animations",
+							"title": "Examples for animated websites",
+							"href": "#animated_web",
+							"sub": [
+								{
+									"label": "SVG animations",
+									"title": "Examples for SVG animations",
+									"href": "#animated_svg"
+								},
+								{
+									"label": "ScrollyTelling",
+									"title": "Examples for all sorts of scroll animated websites",
+									"href": "#animated_scrollytelling"
+								}
+							]
+						},
+						{
+							"label": "Fancy Forms",
+							"title": "Forms don't have to be boring",
+							"href": "#fancy_forms"
+						},
+						{
+							"label": "Full Page Videos",
+							"title": "Ever wanted to cinematize your website?",
+							"href": "#web_video"
+						}
+					]
 				},
 				{
 					"label": "Challenges",
@@ -97,7 +126,7 @@
 					]
 				},
 				{
-					"label": "contact",
+					"label": "Contact",
 					"title": "Demo Contact Page",
 					"href": "#contact"
 				}
