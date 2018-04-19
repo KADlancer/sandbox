@@ -1,7 +1,8 @@
 {% set salt = random(9999) %}
 {% set moduleID = "demoTabs_" ~ salt  %}
 {% if (not inactive) %}
-	{% set firstClass = " active" %}
+	{% set activeClass = " active" %}
+	{% set activeIndex = random(2) + 1 %}
 {% endif %}
 
 
@@ -10,7 +11,7 @@
 	<div class="demo-tabs--header">
 		{% for tab in demo_tabs["tabs"] %}
 
-			<div class="demo-tabs--tab{% if loop.first %}{{ firstClass }}{% endif %}"
+			<div class="demo-tabs--tab{% if loop.index == activeIndex %}{{ activeClass }}{% endif %}"
 			     data-tab-target="{{ moduleID ~ "_" ~ loop.index }}">
 				{{ tab["label"] }}
 			</div>
@@ -21,7 +22,7 @@
 	<div class="demo-tabs--body">
 		{% for tab in demo_tabs["tabs"] %}
 
-			<div class="demo-tabs--panel{% if loop.first %}{{ firstClass }}{% endif %}"
+			<div class="demo-tabs--panel{% if loop.index == activeIndex %}{{ activeClass }}{% endif %}"
 			     id="{{ moduleID ~ "_" ~ loop.index }}">
 				<ul class="linklist">
 					{% for item in tab["content"] %}
